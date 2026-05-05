@@ -1,38 +1,48 @@
 # Checkpoint 10 - Menú de restaurante
 
-Este ejercicio consiste en crear un menú de restaurante usando JavaScript puro.
+He hecho un programa en JavaScript donde el usuario puede elegir un menú según la hora que escriba.
 
-## Qué hace el programa
+El programa empieza preguntando una hora con el formato `HH:mm`.  
+Según esa hora, muestra un menú de desayuno, comida o cena.
 
-El programa pide la hora al usuario en formato HH:mm.
+Después va preguntando qué quiere elegir:
 
-Según la hora, muestra un menú de desayuno, comida o cena.
+- plato principal
+- segundo plato
+- postre o bebida
 
-Después el usuario tiene que elegir:
+Cada opción tiene su precio y al final se suma todo para mostrar una factura con el pedido completo.
 
-- Plato principal
-- Segundo plato
-- Postre o bebida
+También he añadido mensajes aleatorios cuando el usuario elige una opción correcta.
 
-Si escribe una opción incorrecta, el programa vuelve a preguntar usando un while.
+## Cosas que he practicado
 
-Al final se calcula el precio total y se muestra una factura.
+En este ejercicio he usado:
 
-## Qué he utilizado
-
-- prompt y alert
-- condicionales if / else
-- bucles while
-- funciones sencillas
+- `prompt`
+- `alert`
 - variables
-- objetos simples
-- suma de precios
-- .toLowerCase()
+- condicionales `if / else`
+- bucles `while`
+- funciones sencillas
+- objetos para guardar los menús y los precios
+- `.toLowerCase()` para aceptar mayúsculas y minúsculas
 
-## Dificultades
+## Lo que más me costó
 
-Lo que más me costó fue validar las respuestas incorrectas y hacer que el programa aceptara tanto mayúsculas como minúsculas.
+Lo que más me costó fue la parte de validar las respuestas.
 
-## Nota personal
+Al principio, si el usuario escribía algo mal, el programa no sabía qué hacer.  
+Por eso usé un `while`, para que vuelva a preguntar hasta que la opción sea correcta.
 
-He intentado hacerlo de forma sencilla para entender bien la lógica antes de complicarlo más.
+También tuve que usar `.toLowerCase()` porque si el usuario escribía `PASTA`, `Pasta` o `pasta`, quería que el programa lo aceptara igual.
+
+## Pruebas que hice
+
+Probé escribiendo opciones correctas y también opciones inventadas, como `hola`, para comprobar que el programa no se rompía y volvía a preguntar.
+
+También probé distintas horas para ver si salía desayuno, comida o cena.
+
+## Nota
+
+He intentado hacerlo de forma sencilla, usando cosas que entiendo, antes de complicarlo más.
